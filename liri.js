@@ -67,8 +67,9 @@ function twitterData() {
 }
 
 function spotifyData() {
-
-var spotify = new Spotify(key.spotify);
+	
+	// User Authentication
+	var spotify = new Spotify(key.spotify);
 
 	// If the user inputs a song
 	if (process.argv.length >=4 || typeof userChoice === 'string') {
