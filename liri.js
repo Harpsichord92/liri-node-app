@@ -36,7 +36,7 @@ function twitterData() {
 	var client = new twitter(key.twitter);
 
 	// Search Parameters, By Username
-	// Returns a maximum of 5 tweets
+	// Returns a maximum of 20 tweets
 	var param = {
 		screen_name: "harpsichordhk",
 		count: 21
@@ -49,7 +49,7 @@ function twitterData() {
 		//If there is no error
 		if (!error) {
 		
-			//Returns 5 of the user's most recent tweets
+			//Returns 20 of the user's most recent tweets
 			for (var i = 1; i <= 20; i++) {
 				console.log('Tweet #' + i + ':');
 				console.log(tweets[i].text);
